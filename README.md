@@ -171,3 +171,15 @@ sur `https://pienus.fr`.
 - **Un seul moment de motion** : la piste d'empreintes qui s'imprime pas à pas.
   Le script l'arme puis la désarme systématiquement, de sorte qu'un compositeur
   en pause ne laisse jamais un cadre vide.
+
+## Dépôt
+
+<https://github.com/fabiendst34/pienus> — branche `main`, dossier de travail
+`D:\Git\pienus`. Le dépôt exige le gestionnaire d'identifiants Git pour pousser :
+
+```bash
+git config credential.helper manager
+```
+
+`dist/` et `.wrangler/` ne sont pas versionnés : le premier se régénère avec
+`node build.mjs`, le second est le cache local de wrangler.
