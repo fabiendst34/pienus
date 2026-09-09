@@ -1,16 +1,25 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "pienus",
+  "main": "worker.js",
   "compatibility_date": "2026-09-01",
   // Compte personnel de Fabien — surtout pas celui de Kévin, qui porte les sites clients.
   "account_id": "73c47f960a8baffb72252952ab8f16f5",
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
     // Les liens générés portent leur .html : sans cela, chaque clic interne
     // subit une redirection 307 vers l'URL sans extension.
     "html_handling": "none",
     "not_found_handling": "404-page"
   },
+  "d1_databases": [
+    {
+      "binding": "pienus_liste",
+      "database_name": "pienus-liste",
+      "database_id": "fb00ea9b-b6ac-4327-9f9f-ef3667441c89"
+    }
+  ],
   "observability": {
     "enabled": true
   }

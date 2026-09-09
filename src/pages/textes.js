@@ -227,7 +227,12 @@ export const mentions = {
           <p>[Prénom Nom], en qualité de [fonction].</p>
 
           <h2>Hébergement</h2>
-          <p>[Nom de l'hébergeur]<br>[Adresse de l'hébergeur]<br>[Téléphone ou site de l'hébergeur]</p>
+          <p>
+            Cloudflare, Inc.<br>
+            101 Townsend Street, San Francisco, CA 94107, États-Unis<br>
+            <a href="https://www.cloudflare.com" rel="noopener">cloudflare.com</a>
+          </p>
+          <p>Les pages sont servies depuis le réseau Cloudflare, et les inscriptions à la liste d'attente sont conservées dans une base Cloudflare D1 localisée en Europe de l'Ouest.</p>
 
           <h2>Propriété intellectuelle</h2>
           <p>L'ensemble des dessins, motifs, textes et éléments graphiques présents sur ce site sont des créations originales de la maison Piénus. Les quatre motifs de semelle de la saison 1 sont des dessins originaux&nbsp;: ils ne reproduisent, n'imitent et n'incorporent aucune marque, aucun logo, aucun personnage ni aucune œuvre appartenant à un tiers.</p>
@@ -280,7 +285,16 @@ export const confidentialite = {
             <li><strong>Base légale</strong> : votre consentement, donné par l'envoi du formulaire.</li>
             <li><strong>Durée de conservation</strong> : jusqu'à votre désinscription, et au plus tard vingt-quatre mois après votre inscription si les commandes n'ont pas ouvert.</li>
             <li><strong>Destinataires</strong> : la maison Piénus, et le cas échéant [prestataire d'envoi de courriels], à l'exclusion de tout autre. Vos données ne sont ni vendues, ni louées, ni transmises à des fins publicitaires.</li>
+            <li><strong>Hébergement</strong> : une base Cloudflare D1 localisée en Europe de l'Ouest. Vos données ne quittent pas ce périmètre.</li>
+            <li><strong>Une seule ligne par adresse</strong> : vous réinscrire met à jour votre inscription précédente au lieu d'en créer une seconde.</li>
           </ul>
+
+          <h2>Ce que nous ne gardons pas</h2>
+          <p>À l'enregistrement, nous calculons une empreinte tronquée et irréversible de votre adresse IP, uniquement pour freiner les envois automatisés en rafale. <strong>L'adresse IP elle-même n'est jamais écrite</strong>, et l'empreinte n'est rattachée ni à votre adresse électronique ni à votre inscription : elle vit dans une table séparée, comme un simple compteur horaire.</p>
+          <p>Nous ne collectons ni nom, ni prénom, ni adresse postale, ni téléphone, ni date de naissance. Le formulaire ne les demande pas, et le jour où une commande en exigera, ce sera dit ici avant.</p>
+
+          <h2>Vous désinscrire</h2>
+          <p>Chaque inscription reçoit un jeton de désinscription tiré au hasard. Il voyagera dans chaque courriel que nous enverrons, sous la forme d'un lien à un clic qui vous retire de la liste immédiatement, sans avoir à nous écrire ni à vous justifier.</p>
 
           <h2>Traceurs</h2>
           <p>Aucun cookie n'est déposé. Aucun outil de mesure d'audience, aucun pixel publicitaire, aucun réseau social embarqué. Les polices de caractères sont hébergées sur le site lui-même&nbsp;: votre navigateur n'appelle aucun serveur tiers en consultant ces pages. C'est aussi pourquoi vous ne verrez jamais de bandeau de consentement ici.</p>

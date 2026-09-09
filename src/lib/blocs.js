@@ -75,7 +75,7 @@ export function blocListe() {
                 en indiquant les références qui vous intéressent, et nous vous inscrivons à la main.
               </p>
             </noscript>
-            <form data-liste method="post" action="#liste" novalidate data-carnet="" data-courriel="${SITE.courriel}">
+            <form data-liste method="post" action="#liste" novalidate data-carnet="/api/liste" data-courriel="${SITE.courriel}">
               <div class="champ">
                 <label for="courriel">Votre adresse électronique</label>
                 <input type="email" id="courriel" name="courriel" placeholder="vous@exemple.fr" autocomplete="email" required>

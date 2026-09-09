@@ -52,61 +52,33 @@ logo, aucun personnage appartenant à un tiers**, et les noms de produits ne
 citent aucune marque déposée. C'est une contrainte du projet, pas un accident :
 ne la levez pas sans avis juridique, la contrefaçon commence à la première vente.
 
-## À faire avant la mise en ligne
+## À faire avant de lever le noindex
 
 Le site est aujourd'hui une **vitrine avec liste d'attente**. Il ne vend rien et
-ne prétend rien vendre. Cinq points sont à traiter avant de publier :
+ne prétend rien vendre. Le carnet d'inscription, lui, fonctionne (voir plus bas).
+Restent quatre points, tous suspendus à des informations que le code ne peut pas
+deviner :
 
-1. **Mentions légales** — `src/pages/textes.js`, objet `mentions`. Tous les
-   champs entre crochets sont à renseigner : raison sociale, adresse, SIREN,
-   directeur de publication, hébergeur.
-2. **Données personnelles** — même fichier, objet `confidentialite` : identité
-   du responsable de traitement et prestataire d'envoi de courriels.
-3. **Tarifs** — `src/data/produits.js`, objet `tarifs`. Les montants actuels
-   (24,90 € / 44,90 € / 84,90 €) sont **indicatifs** et le site le dit à chaque
+1. **Mentions légales** — `src/pages/textes.js`, objet `mentions`. L'hébergeur est
+   renseigné (Cloudflare). Restent entre crochets : raison sociale, forme
+   juridique, adresse du siège, SIREN, TVA, directeur de publication. Ce sont des
+   mentions opposables : elles ne s'inventent pas.
+2. **Données personnelles** — même fichier, objet `confidentialite` : identité du
+   responsable de traitement, et prestataire d'envoi de courriels une fois choisi.
+   Le reste de la page décrit fidèlement ce qui est réellement stocké.
+3. **Adresse électronique** — `src/lib/gabarit.js`, objet `SITE`. `bonjour@pienus.fr`
+   **n'existe pas** : le domaine `pienus.fr` n'est pas déposé et le site vit sur
+   `workers.dev`. Toute page qui affiche cette adresse promet une boîte qui ne
+   relève pas. À trancher : déposer le domaine et poser les MX, ou pointer une
+   adresse existante.
+4. **Tarifs** — `src/data/produits.js`, objet `tarifs`. Les montants actuels
+   (24,90 € / 44,90 € / 84,90 €) sont **indicatifs**, et le site le dit à chaque
    affichage. À confirmer, ou à retirer, avant l'ouverture des commandes.
-4. **Adresse électronique** — `src/lib/gabarit.js`, objet `SITE` : remplacez
-   `bonjour@pienus.fr` par une adresse réellement relevée, et posez les
-   enregistrements MX du domaine.
-5. **Le carnet d'inscription** — voir ci-dessous. Tant qu'il n'est pas branché,
-   le formulaire ne prétend pas enregistrer : il propose au visiteur d'envoyer
-   son bon par courriel, et vous l'inscrivez à la main.
 
-Ce qui n'existe nulle part sur le site, et qu'il ne faut pas ajouter à la
-légère : avis clients, témoignages, compteur de ventes, note sur cinq, compte à
-rebours, délais de livraison. Rien de tout cela n'est vrai aujourd'hui, et la
-page « La maison » le dit noir sur blanc.
-
-## Brancher le carnet d'inscription
-
-Le formulaire lit l'attribut `data-carnet` (`src/lib/blocs.js`). Vide, il bascule
-en inscription manuelle. Renseigné avec l'URL d'un point d'entrée HTTP, il y
-envoie un POST JSON :
-
-```json
-{ "courriel": "…", "pointure": "42/43", "bon": [{ "ref": "204", "pointure": "42/43", "quantite": 1 }], "prevenir": true }
-```
-
-Un Worker Cloudflare avec une base D1 suffit :
-
-```js
-export default {
-  async fetch(requete, env) {
-    if (requete.method !== 'POST') return new Response('Méthode non permise', { status: 405 });
-    const { courriel, pointure, bon, prevenir } = await requete.json();
-    if (!courriel || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(courriel)) {
-      return Response.json({ erreur: 'Adresse invalide' }, { status: 400 });
-    }
-    await env.DB.prepare(
-      'INSERT INTO liste (courriel, pointure, bon, prevenir, cree_le) VALUES (?, ?, ?, ?, datetime("now"))'
-    ).bind(courriel, pointure ?? '', JSON.stringify(bon ?? []), prevenir ? 1 : 0).run();
-    return Response.json({ ok: true });
-  },
-};
-```
-
-Pensez au CORS si le Worker n'est pas servi depuis le même domaine, et à une
-limitation de débit : le point d'entrée est public.
+Ce qui n'existe nulle part sur le site, et qu'il ne faut pas ajouter à la légère :
+avis clients, témoignages, compteur de ventes, note sur cinq, compte à rebours,
+délais de livraison. Rien de cela n'est vrai aujourd'hui, et la page « La maison »
+le dit noir sur blanc.
 
 ## Déploiement
 
@@ -167,7 +139,9 @@ sur `https://pienus.fr`.
   stockage est le `localStorage` du bon de commande, sous la clé `pienus.bon.v1`.
 - **Le contenu ne dépend pas du script.** Toutes les pages sont lisibles sans
   JavaScript ; il n'ajoute que le bon de commande, le menu compact et les vues
-  de fiche produit. Aucun bloc n'est masqué en attendant une animation.
+  de fiche produit. Aucun bloc n'est masqué en attendant une animation, et sans
+  script le bon affiche un `<noscript>` qui renvoie vers l'adresse de la maison
+  plutôt que de laisser un formulaire inerte.
 - **Un seul moment de motion** : la piste d'empreintes qui s'imprime pas à pas.
   Le script l'arme puis la désarme systématiquement, de sorte qu'un compositeur
   en pause ne laisse jamais un cadre vide.
@@ -183,3 +157,50 @@ git config credential.helper manager
 
 `dist/` et `.wrangler/` ne sont pas versionnés : le premier se régénère avec
 `node build.mjs`, le second est le cache local de wrangler.
+
+## Le carnet d'inscription
+
+**Branché et fonctionnel.** Le formulaire poste sur `/api/liste`, servi par
+`worker.js` et adossé à la base D1 `pienus-liste` (Europe de l'Ouest).
+
+Deux routes, tout le reste retombant sur le site statique :
+
+| Route | Méthode | Rôle |
+| --- | --- | --- |
+| `/api/liste` | POST | Inscrire ou mettre à jour une adresse |
+| `/api/desinscription?jeton=…` | GET | Retirer une adresse en un clic |
+
+Garde-fous en place : validation de l'adresse, huit envois par heure et par
+empreinte d'adresse IP, refus des origines étrangères, corps limité à 4 Ko,
+bon nettoyé et plafonné à vingt lignes. **L'adresse IP n'est jamais stockée** —
+seule une empreinte tronquée l'est, dans une table séparée purgée au-delà de
+24 h, sans lien avec l'inscription.
+
+Une adresse ne figure qu'une fois : se réinscrire met à jour la ligne existante
+et réactive une adresse précédemment désinscrite.
+
+### Administrer la liste
+
+Voir les inscrits :
+
+```bash
+npx wrangler d1 execute pienus-liste --remote --command "SELECT courriel, pointure, bon, cree_le FROM liste WHERE desinscrit_le IS NULL ORDER BY cree_le"
+```
+
+Compter les références demandées, pour décider quel moule lancer d'abord :
+
+```bash
+npx wrangler d1 execute pienus-liste --remote --command "SELECT json_extract(v.value,'$.ref') AS ref, sum(json_extract(v.value,'$.quantite')) AS paires FROM liste, json_each(liste.bon) v WHERE desinscrit_le IS NULL GROUP BY ref ORDER BY paires DESC"
+```
+
+Exporter en JSON :
+
+```bash
+npx wrangler d1 execute pienus-liste --remote --json --command "SELECT * FROM liste" > liste.json
+```
+
+Recréer le schéma sur une base neuve :
+
+```bash
+npx wrangler d1 execute pienus-liste --remote --file=schema.sql
+```
