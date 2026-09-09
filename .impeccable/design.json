@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-07T00:00:00Z",
+  "title": "Design System: Piénus",
+  "extensions": {
+    "colorMeta": {
+      "papier": {
+        "role": "neutral",
+        "displayName": "Papier journal jauni",
+        "tonalRamp": ["oklch(16.0% 0.026 86.3)", "oklch(27.3% 0.029 86.3)", "oklch(38.6% 0.032 86.3)", "oklch(49.9% 0.033 86.3)", "oklch(61.1% 0.034 86.3)", "oklch(72.4% 0.033 86.3)", "oklch(83.7% 0.032 86.3)", "oklch(95.0% 0.030 86.3)"]
+      },
+      "papier-clair": {
+        "role": "neutral",
+        "displayName": "Papier de couverture",
+        "tonalRamp": ["oklch(16.0% 0.020 87.9)", "oklch(27.3% 0.023 87.9)", "oklch(38.6% 0.025 87.9)", "oklch(49.9% 0.026 87.9)", "oklch(61.1% 0.026 87.9)", "oklch(72.4% 0.026 87.9)", "oklch(83.7% 0.025 87.9)", "oklch(95.0% 0.023 87.9)"]
+      },
+      "papier-fonce": {
+        "role": "neutral",
+        "displayName": "Papier piqué",
+        "tonalRamp": ["oklch(16.0% 0.040 85.1)", "oklch(27.3% 0.045 85.1)", "oklch(38.6% 0.049 85.1)", "oklch(49.9% 0.052 85.1)", "oklch(61.1% 0.053 85.1)", "oklch(72.4% 0.052 85.1)", "oklch(83.7% 0.050 85.1)", "oklch(95.0% 0.046 85.1)"]
+      },
+      "encre": {
+        "role": "neutral",
+        "displayName": "Encre noire de labeur",
+        "tonalRamp": ["oklch(16.0% 0.010 72.2)", "oklch(27.3% 0.012 72.2)", "oklch(38.6% 0.013 72.2)", "oklch(49.9% 0.013 72.2)", "oklch(61.1% 0.014 72.2)", "oklch(72.4% 0.013 72.2)", "oklch(83.7% 0.013 72.2)", "oklch(95.0% 0.012 72.2)"]
+      },
+      "encre-douce": {
+        "role": "neutral",
+        "displayName": "Encre passée",
+        "tonalRamp": ["oklch(16.0% 0.020 76.2)", "oklch(27.3% 0.022 76.2)", "oklch(38.6% 0.024 76.2)", "oklch(49.9% 0.026 76.2)", "oklch(61.1% 0.026 76.2)", "oklch(72.4% 0.026 76.2)", "oklch(83.7% 0.025 76.2)", "oklch(95.0% 0.023 76.2)"]
+      },
+      "encre-pale": {
+        "role": "neutral",
+        "displayName": "Encre épuisée",
+        "tonalRamp": ["oklch(16.0% 0.021 75.0)", "oklch(27.3% 0.024 75.0)", "oklch(38.6% 0.026 75.0)", "oklch(49.9% 0.028 75.0)", "oklch(61.1% 0.028 75.0)", "oklch(72.4% 0.028 75.0)", "oklch(83.7% 0.027 75.0)", "oklch(95.0% 0.025 75.0)"]
+      },
+      "sanguine": {
+        "role": "primary",
+        "displayName": "Sanguine d'imprimeur",
+        "tonalRamp": ["oklch(16.0% 0.138 34.2)", "oklch(27.3% 0.158 34.2)", "oklch(38.6% 0.172 34.2)", "oklch(49.9% 0.181 34.2)", "oklch(61.1% 0.184 34.2)", "oklch(72.4% 0.182 34.2)", "oklch(83.7% 0.174 34.2)", "oklch(95.0% 0.161 34.2)"]
+      },
+      "sanguine-sombre": {
+        "role": "primary",
+        "displayName": "Sanguine surchargée",
+        "tonalRamp": ["oklch(16.0% 0.113 34.0)", "oklch(27.3% 0.129 34.0)", "oklch(38.6% 0.140 34.0)", "oklch(49.9% 0.147 34.0)", "oklch(61.1% 0.150 34.0)", "oklch(72.4% 0.148 34.0)", "oklch(83.7% 0.142 34.0)", "oklch(95.0% 0.131 34.0)"]
+      },
+      "turquoise": {
+        "role": "secondary",
+        "displayName": "Turquoise de planche technique",
+        "tonalRamp": ["oklch(16.0% 0.065 190.5)", "oklch(27.3% 0.074 190.5)", "oklch(38.6% 0.081 190.5)", "oklch(49.9% 0.085 190.5)", "oklch(61.1% 0.086 190.5)", "oklch(72.4% 0.085 190.5)", "oklch(83.7% 0.082 190.5)", "oklch(95.0% 0.075 190.5)"]
+      },
+      "turquoise-sombre": {
+        "role": "secondary",
+        "displayName": "Turquoise lisible sur papier",
+        "tonalRamp": ["oklch(16.0% 0.054 189.5)", "oklch(27.3% 0.062 189.5)", "oklch(38.6% 0.068 189.5)", "oklch(49.9% 0.071 189.5)", "oklch(61.1% 0.072 189.5)", "oklch(72.4% 0.071 189.5)", "oklch(83.7% 0.068 189.5)", "oklch(95.0% 0.063 189.5)"]
+      },
+      "moutarde": {
+        "role": "tertiary",
+        "displayName": "Moutarde de pastille",
+        "tonalRamp": ["oklch(16.0% 0.120 78.7)", "oklch(27.3% 0.137 78.7)", "oklch(38.6% 0.150 78.7)", "oklch(49.9% 0.157 78.7)", "oklch(61.1% 0.160 78.7)", "oklch(72.4% 0.158 78.7)", "oklch(83.7% 0.151 78.7)", "oklch(95.0% 0.139 78.7)"]
+      },
+      "moutarde-sombre": {
+        "role": "tertiary",
+        "displayName": "Moutarde recuite (déclarée, non employée)",
+        "tonalRamp": ["oklch(16.0% 0.098 76.3)", "oklch(27.3% 0.112 76.3)", "oklch(38.6% 0.122 76.3)", "oklch(49.9% 0.129 76.3)", "oklch(61.1% 0.131 76.3)", "oklch(72.4% 0.129 76.3)", "oklch(83.7% 0.124 76.3)", "oklch(95.0% 0.114 76.3)"]
+      },
+      "sable": {
+        "role": "neutral",
+        "displayName": "Sable de bas de plage",
+        "tonalRamp": ["oklch(16.0% 0.049 85.3)", "oklch(27.3% 0.056 85.3)", "oklch(38.6% 0.061 85.3)", "oklch(49.9% 0.064 85.3)", "oklch(61.1% 0.065 85.3)", "oklch(72.4% 0.065 85.3)", "oklch(83.7% 0.062 85.3)", "oklch(95.0% 0.057 85.3)"]
+      },
+      "sable-clair": {
+        "role": "neutral",
+        "displayName": "Lèvre éclairée du creux",
+        "tonalRamp": ["oklch(16.0% 0.039 87.4)", "oklch(27.3% 0.044 87.4)", "oklch(38.6% 0.048 87.4)", "oklch(49.9% 0.051 87.4)", "oklch(61.1% 0.052 87.4)", "oklch(72.4% 0.051 87.4)", "oklch(83.7% 0.049 87.4)", "oklch(95.0% 0.045 87.4)"]
+      },
+      "sable-ombre": {
+        "role": "neutral",
+        "displayName": "Grain de sable en ombre",
+        "tonalRamp": ["oklch(16.0% 0.062 77.5)", "oklch(27.3% 0.071 77.5)", "oklch(38.6% 0.078 77.5)", "oklch(49.9% 0.082 77.5)", "oklch(61.1% 0.083 77.5)", "oklch(72.4% 0.082 77.5)", "oklch(83.7% 0.078 77.5)", "oklch(95.0% 0.072 77.5)"]
+      },
+      "sable-creux": {
+        "role": "neutral",
+        "displayName": "Fond du creux",
+        "tonalRamp": ["oklch(16.0% 0.056 74.8)", "oklch(27.3% 0.063 74.8)", "oklch(38.6% 0.069 74.8)", "oklch(49.9% 0.073 74.8)", "oklch(61.1% 0.074 74.8)", "oklch(72.4% 0.073 74.8)", "oklch(83.7% 0.070 74.8)", "oklch(95.0% 0.064 74.8)"]
+      },
+      "sable-encre": {
+        "role": "neutral",
+        "displayName": "Mention posée sur le sable",
+        "tonalRamp": ["oklch(16.0% 0.050 73.6)", "oklch(27.3% 0.057 73.6)", "oklch(38.6% 0.062 73.6)", "oklch(49.9% 0.065 73.6)", "oklch(61.1% 0.067 73.6)", "oklch(72.4% 0.066 73.6)", "oklch(83.7% 0.063 73.6)", "oklch(95.0% 0.058 73.6)"]
+      }
+    },
+    "typographyMeta": {
+      "marque": { "displayName": "Marque", "purpose": "Le mot « Piénus » dans l'enseigne, et lui seul. Seule occurrence de la graisse 900 hors pastille." },
+      "display": { "displayName": "Display", "purpose": "Le h1 de la page, un seul par page. Annoncé par un filet plein, jamais par un numéro de planche." },
+      "headline": { "displayName": "Headline", "purpose": "Le h2 d'une section, toujours accompagné de son numéro de planche sur le même filet." },
+      "title": { "displayName": "Title", "purpose": "Les h3 des temps du schéma en coupe et des blocs de prose." },
+      "body": { "displayName": "Body", "purpose": "Corps de texte, mesure 68 caractères ; 66 dans la prose longue." },
+      "label": { "displayName": "Mention", "purpose": "Étiquettes de deux ou trois mots en capitales condensées : références, numéros de planche, libellés de bouton, en-têtes de tableau." },
+      "caption": { "displayName": "Légende", "purpose": "Commentaire d'illustration ou précision sous un bloc, mesure 34 caractères." },
+      "numeral": { "displayName": "Chiffre", "purpose": "Prix, références, cotes, quantités. Chasse tabulaire ; s'ajoute à une autre classe, ne la remplace pas." }
+    },
+    "shadows": [
+      { "name": "butee-repos", "value": "0 2px 0 0 #221d17, 0 6px 14px -8px rgba(34,29,23,0.6)", "purpose": "État de repos du bouton. Le premier terme est un trait plein — l'épaisseur de la plaque, pas une ombre." },
+      { "name": "butee-haute", "value": "0 4px 0 0 #221d17, 0 12px 20px -10px rgba(34,29,23,0.55)", "purpose": "Survol du bouton, combiné à translateY(-2px)." },
+      { "name": "butee-ecrasee", "value": "0 1px 0 0 #221d17, 0 4px 8px -6px rgba(34,29,23,0.5)", "purpose": "Appui du bouton, combiné à translateY(1px)." },
+      { "name": "butee-inerte", "value": "0 2px 0 0 #7d7161", "purpose": "Bouton désactivé : le trait subsiste, le flou disparaît, l'élément ne bouge plus." },
+      { "name": "tranche-tiroir", "value": "-18px 0 40px -24px rgba(34,29,23,0.7)", "purpose": "Bord gauche du tiroir du bon de commande. Seule ombre franchement diffuse du site." },
+      { "name": "voile", "value": "background: rgba(34,29,23,0.55); backdrop-filter: blur(2px)", "purpose": "Écran posé derrière le tiroir ouvert." }
+    ],
+    "motion": [
+      { "name": "pas", "value": "0.35s", "purpose": "Durée par défaut de toutes les transitions d'état (--pas)." },
+      { "name": "sortie", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Courbe unique du site (--sortie) : départ franc, arrivée longue. Aucune autre courbe n'est employée." },
+      { "name": "tiroir", "value": "0.42s", "purpose": "Glissement du tiroir et fondu du voile. Le script attend 420 ms avant de reposer l'attribut hidden." },
+      { "name": "pastille", "value": "0.45s", "purpose": "Rotation de -7° et agrandissement de 5 % de la pastille au survol d'un article." },
+      { "name": "vignette", "value": "0.5s", "purpose": "Agrandissement de 5,5 % et rotation de -2° de l'empreinte de vignette au survol." },
+      { "name": "piste-pas", "value": "0.5s, décalage 0.15s par pas, retard initial 0.3s", "purpose": "Le seul moment de motion du site. Armé par data-impression=\"en-cours\", désarmé en \"faite\" après la durée totale + 400 ms." },
+      { "name": "reduction", "value": "@media (prefers-reduced-motion: reduce) → 0.01ms", "purpose": "Toutes les durées d'animation et de transition sont ramenées à 0.01 ms, le défilement doux est coupé, l'animation de la piste est désactivée." }
+    ],
+    "breakpoints": [
+      { "name": "pied", "value": "46rem" },
+      { "name": "planche", "value": "52rem" },
+      { "name": "menu-compact", "value": "56rem (max-width)" },
+      { "name": "fiche", "value": "60rem" },
+      { "name": "ouverture", "value": "62rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Bouton principal",
+      "kind": "button",
+      "refersTo": "bouton",
+      "description": "L'action principale d'une page : plaque sanguine bordée d'encre, avec butée visible et libellé en capitales condensées.",
+      "html": "<a class=\"ds-bouton\" href=\"#\">Voir les quatre modèles <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M4 12h15\"/><path d=\"M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-bouton { display: inline-flex; align-items: center; gap: 0.65rem; padding: 0.82rem 1.5rem; background: var(--sanguine, #c1330e); color: #fff8ea; border: 3px solid var(--encre, #221d17); border-radius: 0; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 0.82rem; font-weight: 750; font-stretch: 84%; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; cursor: pointer; box-shadow: 0 2px 0 0 #221d17, 0 6px 14px -8px rgba(34,29,23,0.6); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), background-color 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-bouton:hover { transform: translateY(-2px); box-shadow: 0 4px 0 0 #221d17, 0 12px 20px -10px rgba(34,29,23,0.55); } .ds-bouton:active { transform: translateY(1px); box-shadow: 0 1px 0 0 #221d17, 0 4px 8px -6px rgba(34,29,23,0.5); } .ds-bouton:focus-visible { outline: 3px solid #c1330e; outline-offset: 3px; border-radius: 1px; }"
+    },
+    {
+      "name": "Bouton creux",
+      "kind": "button",
+      "refersTo": "bouton-creux",
+      "description": "L'action secondaire : pas de fond, pas de butée, bordure en currentColor ; s'inverse en encre pleine au survol.",
+      "html": "<a class=\"ds-bouton-creux\" href=\"#\">Lire la notice complète</a>",
+      "css": ".ds-bouton-creux { display: inline-flex; align-items: center; gap: 0.65rem; padding: 0.82rem 1.5rem; background: transparent; color: currentColor; border: 3px solid currentColor; border-radius: 0; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 0.82rem; font-weight: 750; font-stretch: 84%; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), background-color 0.35s cubic-bezier(0.16,1,0.3,1), color 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-bouton-creux:hover { transform: translateY(-2px); background: var(--encre, #221d17); color: var(--papier, #f2e7cf); border-color: var(--encre, #221d17); box-shadow: 0 3px 0 0 rgba(34,29,23,0.35); } .ds-bouton-creux:focus-visible { outline: 3px solid #c1330e; outline-offset: 3px; border-radius: 1px; }"
+    },
+    {
+      "name": "Lien flèche",
+      "kind": "button",
+      "refersTo": "bouton-creux",
+      "description": "La variante sans plaque : capitales condensées soulignées de 2 px, la flèche seule se déplace au survol.",
+      "html": "<a class=\"ds-lien-fleche\" href=\"#\">La fiche <svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M4 12h15\"/><path d=\"M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-lien-fleche { display: inline-flex; align-items: center; gap: 0.5rem; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 0.78rem; font-weight: 700; font-stretch: 80%; letter-spacing: 0.11em; text-transform: uppercase; text-decoration: none; color: inherit; border-bottom: 2px solid currentColor; padding-bottom: 0.2rem; } .ds-lien-fleche svg { transition: transform 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-lien-fleche:hover { color: var(--sanguine, #c1330e); } .ds-lien-fleche:hover svg { transform: translateX(4px); } .ds-lien-fleche:focus-visible { outline: 3px solid #c1330e; outline-offset: 3px; border-radius: 1px; }"
+    },
+    {
+      "name": "Pastille de prix",
+      "kind": "chip",
+      "refersTo": "pastille",
+      "description": "Le tampon de prix : étoile à 14 branches découpée au clip-path, moutarde sur encre. Deux tailles seulement, et jamais pour autre chose qu'un prix.",
+      "html": "<span class=\"ds-pastille\"><span><span class=\"ds-pastille-montant\">24,90&nbsp;€</span><br><span class=\"ds-pastille-unite\">la paire</span></span></span>",
+      "css": ".ds-pastille { --taille: 5.6rem; width: var(--taille); height: var(--taille); display: grid; place-items: center; text-align: center; line-height: 1.25; color: var(--encre, #221d17); background: var(--moutarde, #f0ab16); font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; clip-path: polygon(50% 0%, 59% 9%, 71% 5%, 76% 16%, 89% 16%, 90% 29%, 100% 36%, 95% 48%, 100% 61%, 90% 68%, 89% 81%, 76% 81%, 71% 92%, 59% 88%, 50% 100%, 41% 88%, 29% 92%, 24% 81%, 11% 81%, 10% 68%, 0% 61%, 5% 48%, 0% 36%, 10% 29%, 11% 16%, 24% 16%, 29% 5%, 41% 9%); transition: transform 0.45s cubic-bezier(0.16,1,0.3,1); } .ds-pastille:hover { transform: rotate(-7deg) scale(1.05); } .ds-pastille-montant { font-size: 1.28rem; font-weight: 900; font-stretch: 88%; letter-spacing: -0.03em; font-variant-numeric: tabular-nums lining-nums; } .ds-pastille-unite { font-size: 0.7rem; font-weight: 700; font-stretch: 76%; letter-spacing: 0.09em; text-transform: uppercase; }"
+    },
+    {
+      "name": "Article de planche",
+      "kind": "card",
+      "refersTo": "article",
+      "description": "La case de planche du catalogue : vignette carrée, en-tête référence/relief sur filet, nom, baseline en italique, pied avec lien flèche et pastille.",
+      "html": "<a class=\"ds-article\" href=\"#\"><span class=\"ds-article-vignette\"></span><span class=\"ds-article-entete\"><span class=\"ds-mention\">Réf. 311</span><span class=\"ds-mention ds-mention-turquoise\">4 mm de relief</span></span><span class=\"ds-article-nom\">Plein Soleil</span><p class=\"ds-article-baseline\">Un palmier tous les soixante-dix centimètres.</p><span class=\"ds-article-pied\"><span class=\"ds-lien-fleche\">La fiche</span><span class=\"ds-pastille\"><span><span class=\"ds-pastille-montant\">24,90&nbsp;€</span><br><span class=\"ds-pastille-unite\">la paire</span></span></span></span></a>",
+      "css": ".ds-article { position: relative; display: grid; gap: 1.1rem; align-content: start; padding: 1.4rem 1.3rem 1.5rem; background: var(--papier-clair, #f8f0dd); border: 3px solid var(--encre, #221d17); border-radius: 0; text-decoration: none; color: var(--encre, #221d17); font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), background-color 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-article:hover { transform: translateY(-4px); background: var(--papier, #f2e7cf); } .ds-article:hover .ds-article-nom { color: var(--sanguine, #c1330e); } .ds-article:hover .ds-pastille { transform: rotate(-7deg) scale(1.05); } .ds-article:focus-visible { outline: 3px solid #c1330e; outline-offset: 3px; border-radius: 1px; } .ds-article-vignette { background: var(--sable, #dec89a); border: 2px solid var(--encre, #221d17); aspect-ratio: 1; display: block; } .ds-article-entete { display: flex; align-items: baseline; justify-content: space-between; gap: 0.8rem; border-bottom: 2px solid var(--encre, #221d17); padding-bottom: 0.5rem; } .ds-article-nom { display: block; font-size: 1.7rem; font-weight: 800; font-stretch: 108%; line-height: 0.94; letter-spacing: -0.035em; transition: color 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-article-baseline { font-style: italic; font-size: 0.95rem; line-height: 1.42; color: var(--encre-douce, #554b3d); margin: 0; max-width: 34ch; } .ds-article-pied { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; margin-top: auto; padding-top: 0.4rem; } .ds-mention { font-size: 0.75rem; font-stretch: 78%; font-weight: 650; letter-spacing: 0.13em; text-transform: uppercase; line-height: 1.35; font-variant-numeric: tabular-nums lining-nums; } .ds-mention-turquoise { color: var(--turquoise-sombre, #005955); }"
+    },
+    {
+      "name": "Champ de saisie",
+      "kind": "input",
+      "refersTo": "champ-saisie",
+      "description": "Intitulé en capitales condensées au-dessus, champ bordé de 3 px à rayon nul, curseur sanguine. L'état d'erreur est porté par le conteneur.",
+      "html": "<div class=\"ds-champ\"><label for=\"ds-courriel\">Votre adresse électronique</label><input type=\"email\" id=\"ds-courriel\" placeholder=\"vous@exemple.fr\"><p class=\"ds-champ-aide\">Votre adresse ne sert qu'à ça.</p></div>",
+      "css": ".ds-champ { display: grid; gap: 0.4rem; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; color: var(--encre, #221d17); } .ds-champ > label { font-size: 0.75rem; font-stretch: 78%; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; } .ds-champ input { font: inherit; font-size: 1rem; padding: 0.7rem 0.8rem; border: 3px solid var(--encre, #221d17); border-radius: 0; background: var(--papier, #f2e7cf); color: var(--encre, #221d17); width: 100%; caret-color: var(--sanguine, #c1330e); transition: background-color 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-champ input::placeholder { color: var(--encre-pale, #7d7161); } .ds-champ input:hover { background: var(--papier-clair, #f8f0dd); } .ds-champ input:focus-visible { outline: 3px solid #c1330e; outline-offset: 3px; border-radius: 1px; } .ds-champ[data-erreur='oui'] input { border-color: var(--sanguine-sombre, #93250a); background: #fdeee9; } .ds-champ-aide { font-size: 0.78rem; color: var(--encre-douce, #554b3d); line-height: 1.4; margin: 0; }"
+    },
+    {
+      "name": "Enseigne et rayons",
+      "kind": "nav",
+      "refersTo": "enseigne",
+      "description": "La barre collante du catalogue : marque avec sa seconde plaque décalée, rayons en capitales condensées soulignées, compteur du bon en moutarde.",
+      "html": "<header class=\"ds-enseigne\"><div class=\"ds-enseigne-barre\"><a class=\"ds-enseigne-marque\" href=\"#\"><span class=\"ds-enseigne-mot ds-repere\" data-repere=\"Piénus\">Piénus</span><span class=\"ds-enseigne-saison\">Catalogue général · Saison 1</span></a><nav class=\"ds-rayons\"><a href=\"#\" aria-current=\"page\">Le catalogue</a><a href=\"#\">La notice</a><a href=\"#\">Questions</a></nav><button class=\"ds-enseigne-bon\" type=\"button\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M5 3h14v18l-2.3-1.6L14.4 21l-2.4-1.6L9.6 21l-2.3-1.6L5 21z\"/><path d=\"M9 8h6\"/><path d=\"M9 12h6\"/></svg><span>Mon bon</span><span class=\"ds-chiffre\">2</span></button></div></header>",
+      "css": ".ds-enseigne { background: var(--papier, #f2e7cf); border-bottom: 3px solid var(--encre, #221d17); color: var(--encre, #221d17); font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; } .ds-enseigne-barre { display: flex; align-items: center; gap: 1.4rem; padding: 0.7rem 1.4rem; } .ds-enseigne-marque { display: flex; align-items: baseline; gap: 0.75rem; text-decoration: none; color: inherit; } .ds-enseigne-mot { font-size: 2.1rem; font-weight: 900; font-stretch: 118%; letter-spacing: -0.045em; line-height: 1; } .ds-repere { position: relative; display: inline-block; } .ds-repere::before { content: attr(data-repere); position: absolute; left: -0.022em; top: 0.018em; color: var(--sanguine, #c1330e); mix-blend-mode: multiply; z-index: -1; pointer-events: none; user-select: none; } .ds-enseigne-saison { font-size: 0.7rem; font-stretch: 76%; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--encre-douce, #554b3d); } .ds-rayons { display: flex; gap: 1.6rem; margin-left: auto; align-items: center; } .ds-rayons a { font-size: 0.75rem; font-weight: 700; font-stretch: 80%; letter-spacing: 0.11em; text-transform: uppercase; text-decoration: none; color: inherit; padding: 0.35rem 0; border-bottom: 3px solid transparent; white-space: nowrap; transition: border-color 0.35s cubic-bezier(0.16,1,0.3,1), color 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-rayons a:hover { border-bottom-color: var(--sanguine, #c1330e); } .ds-rayons a[aria-current='page'] { border-bottom-color: var(--encre, #221d17); } .ds-rayons a:focus-visible, .ds-enseigne-bon:focus-visible { outline: 3px solid #c1330e; outline-offset: 3px; border-radius: 1px; } .ds-enseigne-bon { display: inline-flex; align-items: center; gap: 0.5rem; border: 3px solid var(--encre, #221d17); background: var(--moutarde, #f0ab16); color: var(--encre, #221d17); padding: 0.45rem 0.75rem; font: inherit; font-size: 0.7rem; font-weight: 750; font-stretch: 80%; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background-color 0.35s cubic-bezier(0.16,1,0.3,1); } .ds-enseigne-bon:hover { background: var(--sanguine, #c1330e); color: #fff8ea; } .ds-chiffre { min-width: 1.5em; height: 1.5em; display: inline-grid; place-items: center; background: var(--encre, #221d17); color: var(--papier, #f2e7cf); border-radius: 50%; font-size: 0.78em; font-variant-numeric: tabular-nums lining-nums; font-weight: 700; }"
+    },
+    {
+      "name": "En-tête de planche",
+      "kind": "custom",
+      "refersTo": "tableau-entete",
+      "description": "L'ouverture de section : numéro de planche en capitales condensées et titre, posés sur un filet de 3 px. Le numéro n'accompagne qu'un h2, jamais un h1.",
+      "html": "<div class=\"ds-planche-titre\"><span class=\"ds-planche-num\">Planche II · Le catalogue</span><h2>Quatre références pour l'été.</h2></div>",
+      "css": ".ds-planche-titre { display: flex; align-items: baseline; gap: 2rem; border-top: 3px solid currentColor; padding-top: 0.7rem; flex-wrap: wrap; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; color: var(--encre, #221d17); } .ds-planche-num { font-size: 0.75rem; font-stretch: 78%; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap; padding-top: 0.35rem; } .ds-planche-titre h2 { flex: 1 1 16ch; margin: 0; font-size: 3.5rem; font-weight: 800; font-stretch: 108%; line-height: 0.94; letter-spacing: -0.035em; text-wrap: balance; }"
+    },
+    {
+      "name": "Jeton",
+      "kind": "chip",
+      "refersTo": "jeton",
+      "description": "L'étiquette de relevé technique : bordure de 2 px en currentColor, capitales condensées. La variante faible passe en pointillé et encre pâle.",
+      "html": "<span class=\"ds-jeton\">Sable humide</span><span class=\"ds-jeton ds-jeton-faible\">Boue liquide</span>",
+      "css": ".ds-jeton { display: inline-block; border: 2px solid currentColor; border-radius: 0; padding: 0.2rem 0.55rem; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 0.75rem; font-weight: 700; font-stretch: 80%; letter-spacing: 0.07em; margin: 0 0.3rem 0.3rem 0; color: var(--encre, #221d17); } .ds-jeton-faible { color: var(--encre-pale, #7d7161); border-style: dashed; }"
+    },
+    {
+      "name": "Bon de commande",
+      "kind": "custom",
+      "refersTo": "bon",
+      "description": "Le coupon-réponse : bordure de 3 px en pointillé doublée d'un liseré intérieur de 1 px à 7 px du bord.",
+      "html": "<div class=\"ds-bon\"><div class=\"ds-champ\"><label for=\"ds-bon-courriel\">Votre adresse électronique</label><input type=\"email\" id=\"ds-bon-courriel\" placeholder=\"vous@exemple.fr\"></div><button class=\"ds-bouton ds-bouton-encre\" type=\"button\">Déposer mon bon</button></div>",
+      "css": ".ds-bon { background: var(--papier-clair, #f8f0dd); border: 3px dashed var(--encre, #221d17); border-radius: 0; padding: 2.6rem; position: relative; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; display: grid; gap: 1.1rem; } .ds-bon::before { content: ''; position: absolute; inset: 7px; border: 1px solid var(--papier-fonce, #e5d3ae); pointer-events: none; } .ds-bouton-encre { background: var(--encre, #221d17); color: var(--papier, #f2e7cf); width: 100%; justify-content: center; }"
+    },
+    {
+      "name": "Réglette graduée",
+      "kind": "custom",
+      "refersTo": "pastille",
+      "description": "La cote de laboratoire posée sous toute empreinte présentée à l'échelle 1 : une case par centimètre, une sur deux remplie d'encre.",
+      "html": "<div class=\"ds-reglette-bloc\"><div class=\"ds-reglette\" role=\"img\" aria-label=\"Réglette graduée : l'empreinte mesure 9,5 centimètres.\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class=\"ds-reglette-mesure\"><span>0</span><span>9,5 cm</span></div></div>",
+      "css": ".ds-reglette-bloc { display: grid; gap: 0.35rem; width: min(100%, 26rem); font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; } .ds-reglette { display: flex; align-items: stretch; height: 26px; border: 2px solid var(--encre, #221d17); background: var(--papier-clair, #f8f0dd); overflow: hidden; } .ds-reglette span { flex: 1; border-right: 1px solid var(--encre, #221d17); } .ds-reglette span:last-child { border-right: 0; } .ds-reglette span:nth-child(odd) { background: var(--encre, #221d17); } .ds-reglette-mesure { display: flex; justify-content: space-between; font-size: 0.75rem; font-stretch: 78%; font-weight: 650; letter-spacing: 0.13em; text-transform: uppercase; color: var(--sable-creux, #8f6f42); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Le catalogue de vente par correspondance, été 1978",
+    "overview": "Ce n'est pas une boutique en ligne habillée de rétro. C'est un catalogue papier transposé à l'écran : des planches numérotées, des références chiffrées, des relevés techniques en tableau, des pastilles de prix tamponnées en marge, et un bon de commande que l'on remplit à la fin. Le monde et sa raison d'être sont inscrits dans un commentaire HTML livré au sommet de chaque page (le contrat de direction, src/lib/gabarit.js) : la page peut être auditée contre la décision qui l'a produite.\n\nLe support est un papier journal jauni. Il n'est jamais blanc, jamais lisse : un grain fractal de 180 px est peint dans le fond de chaque aplat et repris en multiply, de sorte que la trame reste visible sous la sanguine comme sous l'encre. Par-dessus, les sections signalées .trame reçoivent un tramage offset — des points de demi-teinte de 4 px à 13 % d'opacité. Les couleurs ne sont pas des accents : elles tiennent des sections entières, du filet supérieur au filet inférieur.\n\nLa géométrie est celle d'une presse : aucun angle arrondi, un filet de 3 px partout où deux choses se séparent, et des textes serrés (font-stretch 78 % à 118 % sur un même Archivo variable). La profondeur ne vient jamais de la lumière : elle vient d'une seconde plaque d'encre décalée d'un demi-millimètre et composée en multiply. Le site refuse explicitement le hero lifestyle, la grille de quatre cartes identiques et le bouton arrondi du secteur.",
+    "keyCharacteristics": [
+      "Papier jauni tramé, jamais blanc ; le grain survit sous tous les aplats.",
+      "Aplats pleine bande (sanguine, turquoise, moutarde, encre, sable) plutôt qu'accents ponctuels.",
+      "Zéro rayon de courbure, filets de 3 px, bords francs.",
+      "Grotesque unique (Archivo variable) exploitée sur ses deux axes, graisse et largeur.",
+      "Repérage volontairement raté : seconde plaque décalée en multiply.",
+      "Un seul moment de motion sur tout le site."
+    ],
+    "rules": [
+      { "name": "La règle de la bande entière", "body": "Une encre saturée tient une section complète, d'un filet à l'autre. Elle ne s'emploie pas comme fond d'un encadré isolé au milieu d'une bande papier.", "section": "colors" },
+      { "name": "La règle de la moutarde sur fond sombre", "body": "Sur bande--encre, dans le pied et dans l'en-tête du tiroir, le survol des liens passe en moutarde et non en sanguine : la sanguine sur ces fonds ne franchit pas le seuil de contraste.", "section": "colors" },
+      { "name": "La règle des sables", "body": "Les tons de sable appartiennent aux illustrations. Un bouton, une carte ou un champ n'est jamais peint en sable ; seuls les cadres qui accueillent une empreinte le sont.", "section": "colors" },
+      { "name": "La règle du plancher de 11 px", "body": "Aucun texte fonctionnel ne descend sous 0.7 rem (11,2 px). C'est la valeur qu'atteignent la saison dans l'enseigne, le bouton du menu compact, le compteur du bon et l'unité de la pastille ; rien n'est plus petit.", "section": "typography" },
+      { "name": "La règle des capitales courtes", "body": "Les capitales sont réservées aux étiquettes de deux ou trois mots. Une phrase ne se met jamais en capitales — c'est la raison d'être de .tarifs-pied, qui dit la même chose qu'une mention mais en bas de casse parce qu'elle fait une phrase.", "section": "typography" },
+      { "name": "La règle du numéro de planche", "body": "Le numéro (« Planche II · Le catalogue ») accompagne un h2 de section : il informe que le catalogue est paginé. Il ne coiffe jamais un h1 ; un h1 s'annonce par un filet plein.", "section": "typography" },
+      { "name": "La règle du conteneur unique", "body": "overflow-x: hidden est proscrit sur html et body. Il fabrique un second conteneur de défilement, casse le positionnement collant de l'enseigne et du visuel de fiche, et rend le défilement ancré imprévisible. Un débordement horizontal se corrige à la source, ou se confine dans une enveloppe locale.", "section": "layout" },
+      { "name": "La règle du bord vif", "body": "Une section peut couper à ras (overflow: hidden sur .ouverture), mais seulement à l'échelle d'une bande, jamais à celle du document.", "section": "layout" },
+      { "name": "La règle du grain peint", "body": "Le grain appartient au fond de chaque aplat (background-image + background-blend-mode: multiply), jamais à un calque position: fixed en mix-blend-mode par-dessus la page. Un tel calque force le navigateur à recomposer toute la surface à chaque image de défilement, pour un résultat identique.", "section": "elevation" },
+      { "name": "La règle de l'encre, pas de la lumière", "body": "Un décalage de plaque se compose en multiply avec une encre nommée. Une ombre portée noire semi-transparente pour simuler un relief d'impression est un contresens dans ce monde.", "section": "elevation" },
+      { "name": "La règle du contenu déjà là", "body": "Aucun bloc n'est masqué en attendant une animation. L'état visible est l'état CSS naturel ; une animation ne peut que le retarder. Un site dont le script ne s'exécute pas reste entièrement lisible.", "section": "components" },
+      { "name": "La règle du seul mouvement", "body": "Le site n'a qu'un moment de motion : la piste d'empreintes qui s'imprime pas à pas. Le script l'arme en posant data-impression=\"en-cours\" à l'entrée dans le cadre, puis la désarme systématiquement en \"faite\" après la durée totale plus 400 ms — de sorte qu'un compositeur mis en pause ne laisse jamais un cadre vide. Toute nouvelle animation d'apparition doit reproduire ce couple armement / désarmement, ou ne pas exister.", "section": "components" },
+      { "name": "La règle du désamorçage", "body": "prefers-reduced-motion: reduce ramène toutes les durées d'animation et de transition à 0.01 ms, désactive le défilement doux et coupe l'animation de la piste. Aucune transition ne doit dépendre d'un transitionend pour révéler du contenu.", "section": "components" }
+    ],
+    "dos": [
+      "Do peindre le grain dans le fond de chaque nouvel aplat : background: var(--couleur) var(--grain) plus les trois propriétés de la règle groupée (background-size: 180px 180px, repeat, blend-mode: multiply). Un aplat sans grain se voit immédiatement.",
+      "Do faire tenir une encre saturée sur une bande entière, d'un filet à l'autre.",
+      "Do annoncer une section par .planche-titre : numéro de planche en capitales condensées, h2, le tout posé sur un filet de 3 px.",
+      "Do annoncer un h1 par un <hr class=\"filet\"> seul.",
+      "Do rester dans les trois épaisseurs de trait (3 px / 2 px / 1 px) et dans les quatre variables d'espacement (--filet, --gouttiere, --marge, --colonne).",
+      "Do accompagner toute empreinte présentée à l'échelle 1 de sa réglette graduée et de sa cote en centimètres.",
+      "Do écrire un texte alternatif qui décrit le motif, pas sa référence.",
+      "Do utiliser la moutarde pour le survol des liens sur bande--encre, dans le pied et dans l'en-tête du tiroir.",
+      "Do vérifier que la page reste entière et lisible script désactivé avant de considérer un composant terminé."
+    ],
+    "donts": [
+      "Don't poser overflow-x: hidden sur html ou body. Cela crée un second conteneur de défilement qui casse le positionnement collant de l'enseigne et du visuel de fiche.",
+      "Don't empiler un calque de grain en position: fixed avec mix-blend-mode par-dessus la page : recomposition permanente pour un résultat identique au grain peint dans le fond.",
+      "Don't simuler le repérage raté avec une ombre portée. C'est mix-blend-mode: multiply et une encre nommée, jamais un noir transparent, et le décalage ne suit aucune direction de lumière.",
+      "Don't descendre un texte fonctionnel sous 0.7 rem (11,2 px), ni un champ de saisie sous 1 rem.",
+      "Don't mettre en capitales une phrase de plus de trois mots. Les capitales sont pour les étiquettes.",
+      "Don't coiffer un h1 d'un numéro de planche.",
+      "Don't arrondir un angle. Le rayon 1 px de l'anneau de focus et le 50 % du compteur du bon sont les deux exceptions du système ; il n'en faut pas de troisième.",
+      "Don't masquer un bloc en attendant une animation, ni ajouter un second moment de motion sans le couple armement / désarmement de la piste.",
+      "Don't peindre un élément d'interface en sable : cette famille appartient aux illustrations d'empreinte.",
+      "Don't employer la pastille étoilée pour autre chose qu'un prix, ni la border.",
+      "Don't ajouter un avis client, une note sur cinq, un compteur de ventes ou un compte à rebours : il n'existe aucune donnée réelle derrière, et le monde du catalogue n'en comporte pas."
+    ]
+  }
+}

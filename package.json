@@ -1,0 +1,11 @@
+{
+  "name": "pienus",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Piénus — catalogue de tongs à semelles moulées. Site statique généré, zéro dépendance.",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node build.mjs && node serve.mjs"
+  }
+}
